@@ -1,0 +1,29 @@
+.card_image_hover {
+    width: 20rem;
+    height: 20rem;
+    border: none;
+    margin: 2rem 1rem;
+    max-width: 46%;
+    padding: 0;
+    overflow: hidden;
+
+    .card_image_hover-img {
+        filter: brightness(0.7);
+    }
+
+    .card_image_hover-icons {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 32%;
+        font-size: 2rem;
+        display: flex;
+
+        .card_image_hover-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-left: 0.2rem;
+        }
+    }
+}
+
