@@ -15,7 +15,6 @@ import { useStore } from "../../../store";
 
 function ManageUser() {   
     const { showToast } = useStore();
-    const testRef = useRef(null)
     const [selectedRowKeys, setSelectedRowKeys] = useState([]);
     const columns = [
         {
@@ -35,7 +34,7 @@ function ManageUser() {
             dataIndex: 'status',
             render: (tag) => (
                 <>                
-                    <Tag color={tag == 'active' ? 'green' : (tag == 'disable' ? 'volcano' : 'geekblue')} key={tag}>
+                    <Tag color={tag === 'active' ? 'green' : (tag === 'disable' ? 'volcano' : 'geekblue')} key={tag}>
                         {tag.toUpperCase()}
                     </Tag>
                 </>

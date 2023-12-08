@@ -1,5 +1,5 @@
-import React, { memo, useEffect, useState } from 'react';
-import { Button, Modal, Row, Col, Input } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Modal, Row, Col } from 'antd';
 
 import axios from '../../../utils/axios';
 const ModalSeenUser = ({ userId, openSeen, setOpenSeen }) => {

@@ -179,7 +179,7 @@ function Profile() {
         <div className={styles.container_profile + " container"}>
             <div className={styles.profile}>
                 <div className={styles.profile_avata}>   
-                    <Image src={`${urlApi}/uploads/${state.auth.avatar}`} 
+                    <Image src={`${urlApi}/uploads/${state.auth.avatar ?? data.avatar}`} 
                         alt="avatar"
                         className={styles.img_avata}
                         style={{margin: '0.4rem 0'}}
